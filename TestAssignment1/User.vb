@@ -11,11 +11,13 @@ Public Class User
     Private mdecWeight As Decimal
     Private mdecAge As Decimal
     Private mstrGender As String
-    Private mstrActivityLevel As String
+    Private mdecActivityLevel As Decimal
     Private mdecBMR As Decimal
     Private mdecActivityMR As Decimal
-    Private mdecActivity As Decimal
+    Private mstrActivity As String
     Private mdecBodyFatPercent As Decimal
+    Private mdecBodyFatWeight As Decimal
+    Private mdecLeanBodyMass As Decimal
     Private mdecWaist As Decimal
     Private mdecWrist As Decimal
     Private mdecHip As Decimal
@@ -68,12 +70,12 @@ Public Class User
         End Set
     End Property
 
-    Public Property ActivityLevel As String
+    Public Property ActivityLevel As Decimal
         Get
-            Return mstrActivityLevel
+            Return mdecActivityLevel
         End Get
-        Set(value As String)
-            mstrActivityLevel = value
+        Set(value As Decimal)
+            mdecActivityLevel = value
         End Set
     End Property
 
@@ -95,12 +97,12 @@ Public Class User
         End Set
     End Property
 
-    Public Property Activity As Decimal
+    Public Property Activity As String
         Get
-            Return mdecActivity
+            Return mstrActivity
         End Get
-        Set(value As Decimal)
-            mdecActivity = value
+        Set(value As String)
+            mstrActivity = value
         End Set
     End Property
 
@@ -110,6 +112,24 @@ Public Class User
         End Get
         Set(value As Decimal)
             mdecBodyFatPercent = value
+        End Set
+    End Property
+
+    Public Property BodyFatWeight As Decimal
+        Get
+            Return mdecBodyFatWeight
+        End Get
+        Set(value As Decimal)
+            mdecBodyFatWeight = value
+        End Set
+    End Property
+
+    Public Property LeanBodyMass As Decimal
+        Get
+            Return mdecLeanBodyMass
+        End Get
+        Set(value As Decimal)
+            mdecLeanBodyMass = value
         End Set
     End Property
 
@@ -166,7 +186,7 @@ Public Class User
         mstrGender = String.Empty
         mdecBMR = 0
         mdecActivityMR = 0
-        mdecActivity = 0
+        mstrActivity = ""
         mdecBodyFatPercent = 0
         mdecForearm = 0
         mlstStats = New List(Of Integer)

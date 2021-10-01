@@ -56,11 +56,11 @@ Partial Class frmCalorieCalculator
         Me.lblReportWeight = New System.Windows.Forms.Label()
         Me.lblReportAge = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.lblCURBodyFat = New System.Windows.Forms.Label()
+        Me.lblBMR = New System.Windows.Forms.Label()
+        Me.lblActivityMR = New System.Windows.Forms.Label()
+        Me.lblActivity = New System.Windows.Forms.Label()
+        Me.lblBodyFatPercent = New System.Windows.Forms.Label()
+        Me.lblCURBodyFatPercent = New System.Windows.Forms.Label()
         Me.lblCURActivity = New System.Windows.Forms.Label()
         Me.lblCURActivityMR = New System.Windows.Forms.Label()
         Me.lblCURBMR = New System.Windows.Forms.Label()
@@ -109,21 +109,21 @@ Partial Class frmCalorieCalculator
         Me.txtAge.Location = New System.Drawing.Point(127, 165)
         Me.txtAge.Name = "txtAge"
         Me.txtAge.Size = New System.Drawing.Size(212, 20)
-        Me.txtAge.TabIndex = 1
+        Me.txtAge.TabIndex = 4
         '
         'txtWeight
         '
         Me.txtWeight.Location = New System.Drawing.Point(127, 130)
         Me.txtWeight.Name = "txtWeight"
         Me.txtWeight.Size = New System.Drawing.Size(212, 20)
-        Me.txtWeight.TabIndex = 4
+        Me.txtWeight.TabIndex = 3
         '
         'txtHeight
         '
         Me.txtHeight.Location = New System.Drawing.Point(127, 87)
         Me.txtHeight.Name = "txtHeight"
         Me.txtHeight.Size = New System.Drawing.Size(212, 20)
-        Me.txtHeight.TabIndex = 6
+        Me.txtHeight.TabIndex = 2
         '
         'cboSex
         '
@@ -132,7 +132,7 @@ Partial Class frmCalorieCalculator
         Me.cboSex.Location = New System.Drawing.Point(127, 212)
         Me.cboSex.Name = "cboSex"
         Me.cboSex.Size = New System.Drawing.Size(212, 21)
-        Me.cboSex.TabIndex = 8
+        Me.cboSex.TabIndex = 5
         '
         'lblSex
         '
@@ -163,7 +163,7 @@ Partial Class frmCalorieCalculator
         Me.cboAct.Location = New System.Drawing.Point(127, 246)
         Me.cboAct.Name = "cboAct"
         Me.cboAct.Size = New System.Drawing.Size(212, 21)
-        Me.cboAct.TabIndex = 10
+        Me.cboAct.TabIndex = 6
         '
         'btnCalc
         '
@@ -214,7 +214,7 @@ Partial Class frmCalorieCalculator
         Me.txtName.Location = New System.Drawing.Point(127, 51)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(212, 20)
-        Me.txtName.TabIndex = 19
+        Me.txtName.TabIndex = 1
         '
         'lblBodyFat
         '
@@ -276,28 +276,28 @@ Partial Class frmCalorieCalculator
         Me.txtWaist.Location = New System.Drawing.Point(127, 369)
         Me.txtWaist.Name = "txtWaist"
         Me.txtWaist.Size = New System.Drawing.Size(128, 20)
-        Me.txtWaist.TabIndex = 25
+        Me.txtWaist.TabIndex = 7
         '
         'txtWrist
         '
         Me.txtWrist.Location = New System.Drawing.Point(127, 396)
         Me.txtWrist.Name = "txtWrist"
         Me.txtWrist.Size = New System.Drawing.Size(128, 20)
-        Me.txtWrist.TabIndex = 26
+        Me.txtWrist.TabIndex = 8
         '
         'txtHip
         '
         Me.txtHip.Location = New System.Drawing.Point(127, 426)
         Me.txtHip.Name = "txtHip"
         Me.txtHip.Size = New System.Drawing.Size(128, 20)
-        Me.txtHip.TabIndex = 27
+        Me.txtHip.TabIndex = 9
         '
         'txtForearm
         '
         Me.txtForearm.Location = New System.Drawing.Point(127, 453)
         Me.txtForearm.Name = "txtForearm"
         Me.txtForearm.Size = New System.Drawing.Size(128, 20)
-        Me.txtForearm.TabIndex = 28
+        Me.txtForearm.TabIndex = 10
         '
         'lbxUsers
         '
@@ -305,7 +305,7 @@ Partial Class frmCalorieCalculator
         Me.lbxUsers.Location = New System.Drawing.Point(310, 369)
         Me.lbxUsers.Name = "lbxUsers"
         Me.lbxUsers.Size = New System.Drawing.Size(208, 160)
-        Me.lbxUsers.TabIndex = 29
+        Me.lbxUsers.TabIndex = 14
         '
         'lblUsers
         '
@@ -336,7 +336,7 @@ Partial Class frmCalorieCalculator
         Me.cboMetricImperial.Location = New System.Drawing.Point(668, 43)
         Me.cboMetricImperial.Name = "cboMetricImperial"
         Me.cboMetricImperial.Size = New System.Drawing.Size(212, 21)
-        Me.cboMetricImperial.TabIndex = 32
+        Me.cboMetricImperial.TabIndex = 11
         '
         'lblCurrentUserReport
         '
@@ -404,60 +404,60 @@ Partial Class frmCalorieCalculator
         Me.Label1.TabIndex = 38
         Me.Label1.Text = "Gender:"
         '
-        'Label2
+        'lblBMR
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Silver
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(658, 385)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(38, 13)
-        Me.Label2.TabIndex = 39
-        Me.Label2.Text = "BMR:"
+        Me.lblBMR.AutoSize = True
+        Me.lblBMR.BackColor = System.Drawing.Color.Silver
+        Me.lblBMR.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBMR.Location = New System.Drawing.Point(658, 385)
+        Me.lblBMR.Name = "lblBMR"
+        Me.lblBMR.Size = New System.Drawing.Size(38, 13)
+        Me.lblBMR.TabIndex = 39
+        Me.lblBMR.Text = "BMR:"
         '
-        'Label3
+        'lblActivityMR
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Silver
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(620, 414)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(76, 13)
-        Me.Label3.TabIndex = 40
-        Me.Label3.Text = "Activity MR:"
+        Me.lblActivityMR.AutoSize = True
+        Me.lblActivityMR.BackColor = System.Drawing.Color.Silver
+        Me.lblActivityMR.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblActivityMR.Location = New System.Drawing.Point(620, 414)
+        Me.lblActivityMR.Name = "lblActivityMR"
+        Me.lblActivityMR.Size = New System.Drawing.Size(76, 13)
+        Me.lblActivityMR.TabIndex = 40
+        Me.lblActivityMR.Text = "Activity MR:"
         '
-        'Label4
+        'lblActivity
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Silver
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(643, 444)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(53, 13)
-        Me.Label4.TabIndex = 41
-        Me.Label4.Text = "Activity:"
+        Me.lblActivity.AutoSize = True
+        Me.lblActivity.BackColor = System.Drawing.Color.Silver
+        Me.lblActivity.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblActivity.Location = New System.Drawing.Point(643, 444)
+        Me.lblActivity.Name = "lblActivity"
+        Me.lblActivity.Size = New System.Drawing.Size(53, 13)
+        Me.lblActivity.TabIndex = 41
+        Me.lblActivity.Text = "Activity:"
         '
-        'Label5
+        'lblBodyFatPercent
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Silver
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(622, 477)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(74, 13)
-        Me.Label5.TabIndex = 42
-        Me.Label5.Text = "Body Fat %:"
+        Me.lblBodyFatPercent.AutoSize = True
+        Me.lblBodyFatPercent.BackColor = System.Drawing.Color.Silver
+        Me.lblBodyFatPercent.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBodyFatPercent.Location = New System.Drawing.Point(622, 477)
+        Me.lblBodyFatPercent.Name = "lblBodyFatPercent"
+        Me.lblBodyFatPercent.Size = New System.Drawing.Size(74, 13)
+        Me.lblBodyFatPercent.TabIndex = 42
+        Me.lblBodyFatPercent.Text = "Body Fat %:"
         '
-        'lblCURBodyFat
+        'lblCURBodyFatPercent
         '
-        Me.lblCURBodyFat.AutoSize = True
-        Me.lblCURBodyFat.BackColor = System.Drawing.Color.Silver
-        Me.lblCURBodyFat.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCURBodyFat.Location = New System.Drawing.Point(711, 477)
-        Me.lblCURBodyFat.Name = "lblCURBodyFat"
-        Me.lblCURBodyFat.Size = New System.Drawing.Size(12, 13)
-        Me.lblCURBodyFat.TabIndex = 51
-        Me.lblCURBodyFat.Text = "*"
+        Me.lblCURBodyFatPercent.AutoSize = True
+        Me.lblCURBodyFatPercent.BackColor = System.Drawing.Color.Silver
+        Me.lblCURBodyFatPercent.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCURBodyFatPercent.Location = New System.Drawing.Point(711, 477)
+        Me.lblCURBodyFatPercent.Name = "lblCURBodyFatPercent"
+        Me.lblCURBodyFatPercent.Size = New System.Drawing.Size(12, 13)
+        Me.lblCURBodyFatPercent.TabIndex = 51
+        Me.lblCURBodyFatPercent.Text = "*"
         '
         'lblCURActivity
         '
@@ -553,7 +553,7 @@ Partial Class frmCalorieCalculator
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Silver
         Me.ClientSize = New System.Drawing.Size(921, 616)
-        Me.Controls.Add(Me.lblCURBodyFat)
+        Me.Controls.Add(Me.lblCURBodyFatPercent)
         Me.Controls.Add(Me.lblCURActivity)
         Me.Controls.Add(Me.lblCURActivityMR)
         Me.Controls.Add(Me.lblCURBMR)
@@ -562,10 +562,10 @@ Partial Class frmCalorieCalculator
         Me.Controls.Add(Me.lblCURHeight)
         Me.Controls.Add(Me.lblCURWeight)
         Me.Controls.Add(Me.lblCURAge)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblBodyFatPercent)
+        Me.Controls.Add(Me.lblActivity)
+        Me.Controls.Add(Me.lblActivityMR)
+        Me.Controls.Add(Me.lblBMR)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblReportName)
         Me.Controls.Add(Me.lblReportHeight)
@@ -641,11 +641,11 @@ Partial Class frmCalorieCalculator
     Friend WithEvents lblReportWeight As Label
     Friend WithEvents lblReportAge As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents lblCURBodyFat As Label
+    Friend WithEvents lblBMR As Label
+    Friend WithEvents lblActivityMR As Label
+    Friend WithEvents lblActivity As Label
+    Friend WithEvents lblBodyFatPercent As Label
+    Friend WithEvents lblCURBodyFatPercent As Label
     Friend WithEvents lblCURActivity As Label
     Friend WithEvents lblCURActivityMR As Label
     Friend WithEvents lblCURBMR As Label
